@@ -12,4 +12,3 @@ function whoIsHigher ($family) {
     }
 }
 
-whoIsHigher ($family);

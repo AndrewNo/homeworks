@@ -20,6 +20,3 @@ function age($family) {
 
 }
 
-age($family);
-
-echo "<br>";

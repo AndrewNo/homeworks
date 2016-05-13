@@ -9,4 +9,15 @@ require_once "wife.php";
 require_once "age1.php";
 require_once "whois.php";
 require_once "newchild.php";
-
+listOfChildren($family);
+echo "<br>";
+ageOfChildren($family);
+echo "<br>";
+me($family);
+echo "<br>";
+wife($family);
+echo "<br>";
+age($family);
+echo "<br>";
+whoIsHigher ($family);
+newChild($family);
