@@ -26,7 +26,7 @@ if (is_uploaded_file($_FILES['ava']['tmp_name'])) {
 $settings = getSettings();
 $a_color = (isset($settings['a_color'])? $settings['a_color'] : 'green');
 $width = (isset($settings['width'])? $settings['width'] : 30);
-$avatar = (isset($settings['avatar'])? $settings['avatar'] : '1.ico');
+
 
 ?>
 
