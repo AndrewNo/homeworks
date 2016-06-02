@@ -28,6 +28,10 @@ $settings = getSettings();
 
 $a_color = (isset($settings['a_color'])? $settings['a_color'] : 'green');
 $width = (isset($settings['width'])? $settings['width'] : 30);
+$head_color = (isset($settings['head_color'])? $settings['head_color'] : '#f2f2f2');
+$footer_color = (isset($settings['footer_color'])? $settings['footer_color'] : '#f2f2f2');
+$font = (isset($settings['font'])? $settings['font'] : 16);
+$avatar = (isset($settings['avatar'])? $settings['avatar'] : '1.ico');
 
 ?>
 
@@ -41,6 +45,7 @@ $width = (isset($settings['width'])? $settings['width'] : 30);
         body {
             padding: 0;
             margin: 0;
+            font-size: <?=$font?>px;
         }
         a {
             color: <?php echo $a_color?>;
@@ -51,14 +56,16 @@ $width = (isset($settings['width'])? $settings['width'] : 30);
         }
         .head, .footer {
             padding: 10px 5px;
-            background-color: #f2f2f2;
+
             text-align: right;
          }
         .head {
             height: 100px;
+            background-color: <?=$head_color?>;
         }
         .footer{
             text-align: center;
+            background-color: <?=$footer_color?>;
             clear: both;
         }
         .menu {
